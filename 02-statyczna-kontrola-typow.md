@@ -1,0 +1,7 @@
+### Statyczna kontrola typów
+
+
+
+
+
+ 
