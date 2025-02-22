@@ -1,4 +1,4 @@
-### 2. 1 Statyczna kontrola typów. Definicje i deklaracje.
+### 2. 1 Statyczna kontrola typów. Definicje i deklaracje
 
 #### 2.1.1 Statyczna kontrola typów
 
