@@ -10,7 +10,7 @@
   - [Instalacja i konfiguracja programu QtCreator](./01-qtcreator.md)
   - [Wprowadzenie do systemu CMake](./01-cmake.md)
   - [Debuger](./01-debugger.md)
-- [Lista zadań nr 0](./listy/lista1.md)
+- [Lista zadań nr 1](./listy/lista1.md)
 
 ### 2. Operacje wejścia-wyjścia; typy arytmetyczne i std::string
 
@@ -21,10 +21,9 @@
   - [Standardowy strumień wejścia: `std::cin`](./02-cin.md)
   - [Standardowy strumień wyjścia: `std::cout`](./02-cout.md)
   - [Nowoczesna obsługa standardowego strumienia wyjścia: `std::format` i `std::print`](./02-format-print.md)
+- [lista zadań nr 2](./listy/lista2.md) 
 
-- lista zadań nr 1 
-
-### 3. Instrukcje if, if-else, switch; pętle; tablice, std::array, std::vector
+### 3. Instrukcje warunkowe; pętle; tablice, std::array, std::vector
 
 - Instrukcje warunkowe
   - `if`
@@ -102,5 +101,4 @@
 ### 14. Biblioteki. Qt
 
 ### 15. Przykład programu: fraktal Mandelbrota
-
 
