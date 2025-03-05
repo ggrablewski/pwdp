@@ -141,10 +141,36 @@ int main()
 
 ##### 4.1.2.1 Tryby otwarcia pliku
 
-Na koniec krótka uwaga o trybach otwierania plików. Jeżeli chcemy, by treść pliku do zapisu podczas otwierania nie była kasowana, piszemy tak:
+Na koniec krótka uwaga o trybach otwierania plików. Jeżeli chcemy, by treść pliku do zapisu podczas otwierania nie była kasowana i by każda operacja wyjścia dopisywała nowe dane na końcu już istniejących, to piszemy tak:
 
 ```c++ 
-std::ofstream out ("moje.log", std::ios::app);
+std::ofstream out("moje.log", std::ios::app);  
 ```
 
-Jeżeli chcemy  
+Jeżeli z grubsza rozumiemy, czym [plik tekstowy](https://en.wikipedia.org/wiki/Text_file) różni się od [binarnego](https://en.wikipedia.org/wiki/Binary_file), to plik w trybie binarnym otwieramy tak:
+
+```c++
+std::ofstream out("moje.log", std::ios::binary);  
+```
+
+Niezłe wyjaśnienie różnicy między plikiem binarnym a tekstowym znajduje się [na tej stronie](https://stackoverflow.com/questions/26993086/what-the-point-of-using-stdios-basebinary). W każdym razie: zwykły tekst (cyfry, znaki przestankowe, litery, ogólnie - wszystkie znaki z zestawu UTF) zapisuj i odczytuje w domyślnym dla C++ trybie tekstowym, natomiast resztę, w tym grafikę, muzykę, pliki skompresowane, pliki wykonywalne itp - w trybie binarnym.    
+
+Jeżeli chcemy utworzyć plik binarny w trybie dopisywania, piszemy tak:
+
+```c++
+std::ofstream out("moje.log", std::ios::binary | std::ios::app);  
+```
+
+##### 4.1.2.2 Dygresja: flagi
+
+Zapis 
+
+```c++
+std::ios::binary | std::ios::app
+```
+
+jest charakterystyczny dla języka C++ i oznacza dodanie do siebie dwóch "flag": w tym przypadku są to flagi `app` i `binary`. Czy można by je dodać zwykłym operatorem dodawania, `+`? Tak, ale istnieją dobre powody, by tego nie robić, mimo że program działałby identycznie. Pisząc `+` mówimy osobom, czytającym program "Hej, dodaję do siebie dwie liczby: zajrzyj do dokumentacji lub kodu źródłowego, jeśli chcesz wiedzieć, co oznaczają ich wartości". Z kolei użycie `|` mówi każdej osobie czytającej tę instrukcję "Hej, ustawiam (= włączam) te dwie niezależne od siebie opcje; odpowiadające im wartości numeryczne nie mają żadnego znaczenia". Realizuje się to poprzez nadanie flagom wartości będących potęgami dwójki, czyli 1, 2, 4, 8, 16 itd. Teraz wystarczy zauważyć, że sumę potęg dwójki można zrealizować, z identycznym rezultatem, zarówno poprzez operator dodawania arytmetycznego `+`, jak i sumy bitowej `|`.
+
+Kiedy się stosuje flagi? Ano wtedy, gdy mamy gdzieś przekazać szereg opcji "włącz/wyłącz". W przypadku plików, opcje te dotyczą m.in. tego, czy ma być on otwarty do czytania, do zapisu, w trybie dołączania, w trybie binarnym. W przypadku okien naszych aplikacji, flagi będą mówić m.in., czy okno ma mieć pasek tytułowy, przycisk opcji systemowych, przycisk minimalizacji, przycisk maksymalizacji, przycisk zamknięcia, ramkę, czy ma być oknem zwykłym, czy dialogowym, wyświetlanym nad innymi oknami - i tak dalej. Zamiast przesyłać gdzieś osobno 5, a czasami nawet 20 takich "flag" w 5 czy 20 zmiennych, przesyłamy je w jednej zmiennej (np. typu `unsigned int`), w której każdej fladze odpowiada inny bit. Dlatego właśnie flagi łączymy  operatorem sumy bitowej.
+
+Więc, na koniec, co to są flagi? Są to jakieś obiekty (czy raczej po prostu liczby), prawdopodobnie typu całkowitego (bez znaku), które można ze sobą agregować za pomocą operatora sumy bitowej `|`.

@@ -39,9 +39,7 @@
 ### 4. Operacje na plikach. Przykład: pliki graficzne w formacie PGM
 
 - [Pliki kontrolujemy za pomocą obiektów](./04-pliki.md)
-  - `std::ifstream`
-  - `std::ofstream`
-- Format PGM
+- [Format PGM](./04-pgm.md)
 - Lista zadań nr 4
 
 ### 5. Funkcje; deklaracja, definicja. Pliki nagłówkowe i źródłowe. Projekty
@@ -69,13 +67,14 @@
 - Debugowanie programów z funkcjami rekurencyjnymi
 - Lista zadań nr 7
 
-### 8. Struktury i klasy
+### 8. Struktury, klasy i obiekty
 
 - Struktura
 - Klasa jako proste rozszerzenie struktury
   - konstruktor, destruktor
   - funkcje składowe
   - sekcje prywatne i publiczne
+- Obiekt
 - Lista zadań nr 8
 
 ### 9. Szablony i wyjątki
