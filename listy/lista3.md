@@ -17,4 +17,4 @@
 
    Napisz program, który będzie wczytywał `c_1` z konsoli, a następnie wypisywał na ekranie 20 kolejnych elementów tego ciągu.
 
-5. Napisz program, który wczyta słowo, po czym wypisze je na ekranie, przy czym znaki będą wyświetlane na przemian w kolorach czerwonym i zielonym. Jak wyświetlać kolorowy tekst - patrz poprzednia lista.    
+5. (1 pkt) Napisz program, który wczyta słowo, po czym wypisze je na ekranie, przy czym znaki będą wyświetlane na przemian w kolorach czerwonym i zielonym. Jak wyświetlać kolorowy tekst - patrz poprzednia lista.    

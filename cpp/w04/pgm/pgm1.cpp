@@ -9,7 +9,8 @@ int main()
     const int height = 250;
     const int max_color = 256;
     const double radius = length / 2.0;
-    const double radius_squared = radius * radius;
+    double half_perimeter = length + height;
+
     const std::string filename = "moj_obrazek_1.pgm";
     std::ofstream out(filename);
 
@@ -24,7 +25,8 @@ int main()
     {
         for (int x = 0; x < length; x++)
         {
-            pixels[y][x] = std::round(double(x + y) / double(length + height) * max_color);
+            double normalized_value = double(x + y) / half_perimeter;
+            pixels[y][x] = std::round(normalized_value * max_color);
         }
     }
 

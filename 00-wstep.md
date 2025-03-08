@@ -21,7 +21,9 @@ Dlaczego C++?
 - Bo nie są to pierwsze zajęcia z programowania i studenci powinni poznać zupełnie inne podejście do programowania niż to, które poznali bądź poznają na zajęciach z takich technologii, jak Python,  JavaScript czy Matlab.
 - Bo go nieźle znam, więc pewnie mogę go uczyć bez obawy, że komuś zaszkodzę.
 
-*Praktyczny wstęp do programowania*, jak sama nazwa wskazuje, nie jest jednak kursem języka C++. To jest kurs programowania, w którym język C++ jest tylko narzędziem. Narzędziem, które należy jednak choć trochę poznać.    
+*Praktyczny wstęp do programowania*, jak sama nazwa wskazuje, nie jest jednak kursem języka C++. To jest kurs programowania, w którym język C++ jest tylko narzędziem. Narzędziem, które należy jednak choć trochę poznać.
+
+Zarówno programowania, jak i języków programowania uczymy się tak, jak języków obcych (i nawet języka ojczystego) - przez całe życie. Początkowo ledwo dukając niezbyt zrozumiałe formułki i stopniowo nabierając wprawy. Z dzieckiem można się dogadać po ok. dwóch latach nauki, po czterech latach komunikacja zwykle jest już płynna. Nie inaczej jest z programowaniem i nauką języków programowania, zwłaszcza jeśli uczy się kilku takich języków naraz i zachodzi znane z nauki języków naturalnych zjawisko [interferencji](https://pl.wikipedia.org/wiki/Transfer_j%C4%99zykowy).
 
 ### Zalecana literatura
 

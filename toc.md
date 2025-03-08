@@ -40,7 +40,7 @@
 
 - [Pliki kontrolujemy za pomocą obiektów](./04-pliki.md)
 - [Format PGM](./04-pgm.md)
-- Lista zadań nr 4
+- [Lista zadań nr 4](./listy/lista4.md)
 
 ### 5. Funkcje; deklaracja, definicja. Pliki nagłówkowe i źródłowe. Projekty
 
@@ -49,6 +49,7 @@
 - Definicja funkcji
 - Interfejs i implementacja, czyli pliki nagłówkowe i źródłowe
 - W stronę projektów i bibliotek
+- Przykłady
 - Lista zadań nr 5
 
 ### 6. Argumenty funkcji; wskaźnik i referencja
