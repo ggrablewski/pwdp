@@ -10,4 +10,12 @@
 
    W tym napisie kolejne znaki charakteryzują się wzrastającą liczbą pikseli zapalanych w celu wyświetlenia danego [glifu](https://pl.wikipedia.org/wiki/Glif_(typografia)), co odpowiada rosnącej jasności piksela obrazu wejściowego, od czerni (jeżeli tło twojej konsoli jest czarne) do (prawie) bieli.
 
-3. (2 pkt). Odcienie szarości są nieco nudne. Zapoznaj się z formatem [Plain PPM](https://netpbm.sourceforge.net/doc/ppm.html#plainppm). Przekształć jeden z programów (`pgm0.cpp`, `pgm0a.cpp` itd), które przedstawiłem w opisie formatu PGM ([tutaj](../cpp/w04/pgm)) tak, by na obrazku pojawiły się kolory.
+3. (2 pkt). Do wyboru jeden z dwóch:
+
+   - A) Zapoznaj się z formatem [Plain PPM](https://netpbm.sourceforge.net/doc/ppm.html#plainppm). Przekształć jeden z programów (`pgm0.cpp`, `pgm0a.cpp` itd), które przedstawiłem w opisie formatu PGM ([tutaj](../cpp/w04/pgm)) tak, by na obrazku pojawiły się kolory.
+
+   LUB
+
+   -  B) Napisz program, który zlicza i wyświetla liczbę wierszy, słów i znaków w dowolnym pliku. 
+
+     

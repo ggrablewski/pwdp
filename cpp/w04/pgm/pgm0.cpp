@@ -8,7 +8,7 @@ int main()
     const int length = 250;
     const int height = 250;
     const int max_color = 255;
-    double half_perimeter = length + height;
+    const double half_perimeter = length + height;
     const std::string filename = "moj_obrazek_0.pgm";
 
     std::ofstream out(filename);

@@ -21,7 +21,14 @@
   - [Standardowy strumień wejścia: `std::cin`](./02-cin.md)
   - [Standardowy strumień wyjścia: `std::cout`](./02-cout.md)
   - [Nowoczesna obsługa standardowego strumienia wyjścia: `std::format` i `std::print`](./02-format-print.md)
+
 - [lista zadań nr 2](./listy/lista2.md) 
+
+- [Dodatek](02-dodatek.md): co robić, gdy `std::format` lub `std::print` nie działa
+
+  - [fmtlib](02-fmtlib.md)
+
+    
 
 ### 3. Instrukcje warunkowe; pętle; tablice, `std::array`, `std::vector`
 
@@ -40,16 +47,16 @@
 
 - [Pliki kontrolujemy za pomocą obiektów](./04-pliki.md)
 - [Format PGM](./04-pgm.md)
+- [Czytanie każdego znaku](./04-get.md)
 - [Lista zadań nr 4](./listy/lista4.md)
 
 ### 5. Funkcje; deklaracja, definicja. Pliki nagłówkowe i źródłowe. Projekty
 
-- Co to jest funkcja?
-- Deklaracja funkcji
-- Definicja funkcji
-- Interfejs i implementacja, czyli pliki nagłówkowe i źródłowe
+- [Co to jest funkcja? Deklaracja i definicja funkcji](05-funkcje.md)
+- [Przykład 1](./05-example1.md)
+- [Interfejs i implementacja, czyli pliki nagłówkowe i źródłowe](05-interfejs-implementacja.md)
 - W stronę projektów i bibliotek
-- Przykłady
+- Przykład 2
 - Lista zadań nr 5
 
 ### 6. Argumenty funkcji; wskaźnik i referencja

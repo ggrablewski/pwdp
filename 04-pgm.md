@@ -63,6 +63,7 @@ int main()
     const int length = 250;
     const int height = 250;
     const int max_color = 255;
+    const double half_perimeter = length + height;
     const std::string filename = "moj_obrazek_0.pgm";
 
     std::ofstream out(filename);
@@ -78,13 +79,12 @@ int main()
     {
         for (int x = 0; x < length; x++)
         {
-            double normalized_value =  std::round(double(x + y) / double(length + height);
+            double normalized_value = double(x + y) / half_perimeter;
             pixels[y][x] = std::round(normalized_value * max_color);
         }
     }
 
     std::println(out, "P2\n{} {}\n{}", length, height, max_color);
-                                                  
     for (int y = 0; y < height; y++)
     {
         for (int x = 0; x < length; x++)
@@ -113,11 +113,12 @@ Przeanalizujmy ten program krok po kroku, fragment po fragmencie.
   const int length = 250;                           // długość
   const int height = 250;                           // wysokość
   const int max_color = 255;                        // wartość odpowiadająca bieli 
+  const double half_perimeter = length + height;    // połowa obwodu
   const std::string filename = "moj_obrazek_0.pgm"; // nazwa pliku wynikowego
   ```
-  
+
   Użycie modyfikatora `const` nie jest konieczne, ale pomaga zapewnić poprawność programu i ułatwia jego lekturę. 
-  
+
   - Zmienne i obiekty zadeklarowane z modyfikatorem `const` nie mogą być modyfikowane w programie.
 
 - Następnie otwieramy plik do zapisu:
