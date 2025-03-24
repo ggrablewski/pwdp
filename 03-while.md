@@ -12,7 +12,7 @@ int main()
 {
     int n = 7; 
     int k = 22;
-    int a = 0;
+    int a = 1;
     while((n * a) % k != 1)
     {
        a++;        

@@ -9,7 +9,7 @@ int main()
 {
 	const int N = 100'000'000;
 	double suma = 0.0;
-	for (int i = 1; i < N; i++)
+	for (int i = 1; i <= N; i++)
 	{
     	suma += 1.0 / i;
 	}

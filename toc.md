@@ -28,8 +28,6 @@
 
   - [fmtlib](02-fmtlib.md)
 
-    
-
 ### 3. Instrukcje warunkowe; pętle; tablice, `std::array`, `std::vector`
 
 - [Instrukcje i wyrażenia warunkowe](./03-wyrazenia-warunkowe.md)
@@ -53,11 +51,11 @@
 ### 5. Funkcje; deklaracja, definicja. Pliki nagłówkowe i źródłowe. Projekty
 
 - [Co to jest funkcja? Deklaracja i definicja funkcji](05-funkcje.md)
-- [Przykład 1](./05-example1.md)
+- [Przykład](./05-example1.md)
 - [Interfejs i implementacja, czyli pliki nagłówkowe i źródłowe](05-interfejs-implementacja.md)
-- W stronę projektów i bibliotek
-- Przykład 2
-- Lista zadań nr 5
+- [W stronę projektów i bibliotek](./05-projekty-biblioteki.md)
+- [Kolejne przykłady](05-example2.md)
+- [Lista zadań nr 5](./listy/lista5.md)
 
 ### 6. Argumenty funkcji; wskaźnik i referencja
 
@@ -71,7 +69,7 @@
 ### 7. Funkcje rekurencyjne
 
 - Przykłady funkcji rekurencyjnych
-- Co to jest stackoverflow?
+- Co to jest *stack overflow*?
 - Debugowanie programów z funkcjami rekurencyjnymi
 - Lista zadań nr 7
 

@@ -65,7 +65,7 @@ Tablice nowoczesne zdefiniowano w bibliotece standardowej C++ w pliku nagłówko
  int main()
  {
      std::array<int, 100> tab; // tablica stu int-ów
-     std::array<int, std::array<int, 100>>; // tablica 100 na 100 int-ów
+     std::array<std::array<int, 100>, 100>; // tablica 100 na 100 int-ów
  }
  ```
 
