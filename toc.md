@@ -59,7 +59,7 @@
 
 ### 6. Argumenty funkcji; wskaźnik i referencja
 
-- Przekazywanie argumentów przez wartość
+- [Przekazywanie argumentów przez wartość](06-arg-value.md)
 - Przekazywanie argumentów przez referencję
 - Przekazywanie argumentów przez stałą referencję
 - Przekazywanie argumentów przez wskaźnik - operator wyłuskania wartości

@@ -52,7 +52,18 @@ int nwd(int n, int m)
     f() && g()
     ```
 
-    funkcja `g` zostanie wywołana tylko wtedy, gdy `f()` zwróci `true`. Jeżeli bowiem `f()` zwróci `false`, to wartość całego wyrażenia równa jest `false`. 
+    funkcja `g` zostanie wywołana tylko wtedy, gdy `f()` zwróci `true`. Jeżeli bowiem `f()` zwróci `false`, to wartość całego wyrażenia równa jest `false`. Dlatego instrukcja 
+    
+    ```c++
+    f() && g();
+    ```
+    
+    równoważna jest instrukcji warunkowej
+    
+    ```c++
+    if (f())
+        g();
+    ```
 
 - Ponieważ argumentami operatora iloczynu logicznego (koniunkcji)  `&&` są wyrażenia arytmetyczne, przed wyznaczeniem wartości tego operatora zostaną one skonwertowane do wyrażeń logicznych ([boolowskich](https://pl.wikipedia.org/wiki/Logiczny_typ_danych)) przez porównanie z zerem. 
 
