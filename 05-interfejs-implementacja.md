@@ -10,6 +10,8 @@ Spójrzmy na poniższy przykład, w którym program z poprzedniego podrozdziału
 - `pgm.h` - plik z interfejsem pliku `pgm.cpp`
 - `main.cpp` - program korzystający z kodu zawartego w `pgm.cpp`.
 
+Projekt z omawianymi tu plikami można pobrać [tutaj](./cpp/w05/interfaces/).   
+
 #### Plik 5.3.1 `pgm.h`
 
 Zasadniczo pliki nagłówkowe zawierają wyłącznie deklaracje, jak na poniższym przykładzie:
