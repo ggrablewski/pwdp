@@ -62,7 +62,7 @@
 - [Przekazywanie argumentów przez wartość](06-arg-value.md)
 - [Przekazywanie argumentów przez referencję](06-arg-reference.md)
 - [Przekazywanie argumentów przez stałą referencję](06-arg-const-reference.md)
-- Przekazywanie argumentów przez wskaźnik - operator wyłuskania wartości
+- [Przekazywanie argumentów przez wskaźnik i operator wyłuskania wartości](06-arg-pointer.md)
 - Używanie funkcji z argumentami wskaźnikowymi - operator pobrania adresu 
 - Lista zadań nr 6
 
