@@ -108,4 +108,5 @@
 
 ### 15. Przykład programu: fraktal Mandelbrota
 
-## 16. Egzamin
+### Zagadnienia egzaminacyjne 
+
