@@ -63,8 +63,10 @@
 - [Przekazywanie argumentów przez referencję](06-arg-reference.md)
 - [Przekazywanie argumentów przez stałą referencję](06-arg-const-reference.md)
 - [Przekazywanie argumentów przez wskaźnik i operator wyłuskania wartości](06-arg-pointer.md)
-- Używanie funkcji z argumentami wskaźnikowymi - operator pobrania adresu 
-- Lista zadań nr 6
+- [Używanie funkcji z argumentami wskaźnikowymi - operator pobrania adresu](06-arg-pointer-usage.md)
+- [Przekazywanie funkcji jako argumentów funkcji](06-arg-function.md)
+- [Argumenty funkcji `main`](06-arg-main.md)
+- [Lista zadań nr 6](./listy/lista6.md)
 
 ### 7. Funkcje rekurencyjne
 
@@ -91,15 +93,18 @@
 
 ### 10. Bitowa reprezentacja typów całkowitoliczbowych. Operacje bitowe. Pliki tekstowe: kodowanie ASCII i UTF-8
 
+### 11. Biblioteki: SFML
 
+- [Krótkie wprowadzenie do SFML](./11-SFML-intro.md)
+- [Prosty program w SFML](./11-SFML-pierwszy.md)
+- [Kompilacja programów wykorzystujących SFML](./11-SFML-kompilacja.md)
+- [Lista zadań nr 11](listy/lista11.md) 
 
-### 11. Biblioteki. Przykład: SFML
+### 12. Biblioteki: SFML (2)
 
-### 12. Biblioteki. SFML
+### 13. Biblioteki: Qt
 
-### 13. Biblioteki. Przykład: Qt
-
-### 14. Biblioteki. Qt
+### 14. Biblioteki: Qt (2)
 
 ### 15. Przykład programu: fraktal Mandelbrota
 

@@ -7,7 +7,7 @@
 
      ```c++
      int a[4] = {1, 2, 3, -5};
-     std::cout << suma(a, 4) << "\n";   // -1
+     std::cout << suma(a, 4) << "\n";   // 1
      std::cout << suma(a, 2) << "\n";   // 3
      std::cout << suma(a, 0) << "\n";   // 0 
      ```
