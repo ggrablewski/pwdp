@@ -161,4 +161,4 @@ p->get(1)[0].front()->size()
 ```c++
 ((*p).get(1)[0].front()).size()
 ```
-Podobnie sprawa ma się z `root->next->next->value` i `(*(*(*root).next).next).value`.  W obu przypadkach wyrażenie z operatorami `->` czytamy po prostu od lewej do prawej i nie musimy wracać do przeczytanego tekstu, gdy zobaczymy prawy nawias, `)`.    
+Podobnie sprawa ma się z `root->next->next->value` i `(*(*(*root).next).next).value`.  W obu przypadkach wyrażenie z operatorami `->` czytamy po prostu od lewej do prawej i nie musimy wracać do przeczytanego tekstu, gdy zobaczymy prawy nawias, `)`.

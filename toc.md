@@ -98,6 +98,11 @@
 - [Krótkie wprowadzenie do SFML](./11-SFML-intro.md)
 - [Prosty program w SFML](./11-SFML-pierwszy.md)
 - [Kompilacja programów wykorzystujących SFML](./11-SFML-kompilacja.md)
+- Wybrane elementy modułu `Graphics`
+  - [Kształty, pozycja, kolor, obrót](./11-SFML-shapes-colors.md)
+  - [Zegar i animacja](./11-SFML-animation.md)
+  - [Antyaliasing](./11-SFML-antialiasing.md)
+  
 - [Lista zadań nr 11](listy/lista11.md) 
 
 ### 12. Biblioteki: SFML (2)
