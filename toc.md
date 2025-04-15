@@ -70,10 +70,10 @@
 
 ### 7. Funkcje rekurencyjne
 
-- Przykłady funkcji rekurencyjnych
-- Co to jest *stack overflow*?
+- [Definicja i przykłady funkcji rekurencyjnych](./07-rekurencja.md)
+- [Co to jest *stack overflow*?](07-stackoverflow.md)
 - Debugowanie programów z funkcjami rekurencyjnymi
-- Lista zadań nr 7
+- [Lista zadań nr 7](./listy/lista7.md)
 
 ### 8. Struktury, klasy i obiekty
 
@@ -91,7 +91,10 @@
 - Prosty przykład szablonu
 - Co robić, gdy jakiś fragment programu zgłosi wyjątek? 
 
-### 10. Bitowa reprezentacja typów całkowitoliczbowych. Operacje bitowe. Pliki tekstowe: kodowanie ASCII i UTF-8
+### 10. Elementy biblioteki standardowej C++ (STL) 
+
+- Kontenery
+- Algorytmy 
 
 ### 11. Biblioteki: SFML
 
