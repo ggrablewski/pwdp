@@ -1,7 +1,9 @@
 ## Lista zadań nr 6
 
-1. (2 pkt) Zgodnie z [twierdzeniem Goldbacha-Eulera](https://en.wikipedia.org/wiki/Goldbach%E2%80%93Euler_theorem), 
+1. (2 pkt) Zgodnie z [twierdzeniem Goldbacha-Eulera](https://en.wikipedia.org/wiki/Goldbach%E2%80%93Euler_theorem),
+ 
    ![{\displaystyle \sum _{p}^{\infty }{\frac {1}{p-1}}={{\frac {1}{3}}+{\frac {1}{7}}+{\frac {1}{8}}+{\frac {1}{15}}+{\frac {1}{24}}+{\frac {1}{26}}+{\frac {1}{31}}}+\cdots =1.}](https://wikimedia.org/api/rest_v1/media/math/render/svg/7d7d718001b4c250e49c7858fb8574e8286de851)
+   
    gdzie suma przebiega po wszystkich liczbach naturalnych $p$ będących [doskonałymi potęgami](https://en.wikipedia.org/wiki/Perfect_power) większymi od 1. Listę doskonałych potęg $\le 1000$ można znaleźć w Encyklopedii ciągów pod numerem [A001694](https://oeis.org/A001694). Można też je wygenerować komputerowo. W tym celu zaimplementuj dwie funkcje, `perf_pow` i `special_sum` tak, aby poniższy program wyznaczał 
 
    - sumę $$\displaystyle \sum_{p \in S(N)} \frac{1}{p-1}$$ , gdzie $S(N)$ to zbiór doskonałych potęg $p$ takich, że $2 \le p \le N$
@@ -49,7 +51,7 @@
 
    - Jeżeli w Twoim rozwiązaniu w trzeciej kolumnie ujrzysz liczby ujemne, to masz błąd.   
 
-2. (2 pkt) Zaimplementuj funkcję `trapez` wyznaczającą numeryczne przybliżenie wartości całki z dowolnej funkcji w dowolnym skończonym przedziale. Funkcja ma mieć 4 argumenty:
+4. (2 pkt) Zaimplementuj funkcję `trapez` wyznaczającą numeryczne przybliżenie wartości całki z dowolnej funkcji w dowolnym skończonym przedziale. Funkcja ma mieć 4 argumenty:
 
    - całkowaną funkcję (`f`)
    - początek przedziału całkowania (`a`)
@@ -58,7 +60,7 @@
 
    Metoda trapezów opisana jest m.in. w Wikipedii [angielskiej](https://en.wikipedia.org/wiki/Trapezoidal_rule) i [polskiej](https://pl.wikipedia.org/wiki/Wz%C3%B3r_trapez%C3%B3w). W skrócie, chodzi o wyznaczenie sumy 
 
-   $${\displaystyle \int \limits _{a}^{b}f(x)\,dx\approx {\frac {b-a}{{2}{N}}}\left(f(x_{0})+f(x_{N})+2f(x_{1})+\ldots +2f(x_{N-1})\right).}$$ 
+$${\displaystyle \int_{a}^{b}f(x)dx\approx {\frac {b-a}{{2}{N}}}\left(f(x_{0})+f(x_{N})+2f(x_{1})+\ldots +2f(x_{N-1})\right).}$$ 
 
    w której $f$ to całkowana funkcja, $a$ i $b$ to początek i koniec przedziału całkowania, a $x_k = a + hk$ dla $k=0,1,\ldots,N$, gdzie $h = (b-a)/N$. Z powyższego wynika też, że  $x_0 = a$ i $x_N = b$, 
 
@@ -69,4 +71,4 @@
      - $$\int_0^1 x^3 \, dx$$
      - $$\pi^{-1}\int_0^\pi \sin^2(x) \, dx$$
 
-     dla kilku wartości $ h = (b-a)/N$. Czy wiesz, dlaczego ostatnią z powyższych całek tak łatwo i tak dokładnie można wyznaczyć metodą trapezów?
+     dla kilku wartości $h = (b-a)/N$. Czy wiesz, dlaczego ostatnią z powyższych całek tak łatwo i tak dokładnie można wyznaczyć metodą trapezów?
