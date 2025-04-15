@@ -34,7 +34,7 @@
 
 #### Uwagi
 
-- Zadanie 3. wprowadza przykład znaku sterującego (czy też sekwencji znaków sterujących). Niektóre urządzenia większość znaków przetwarzają jak litery, natomiast kilka wybranych traktują jak rozkazy. W tym samym strumieniu mamy więc wymieszane dane ("litery") i rozkazy. Innym przykładem znaku specjalnego jest `\` w napisach (np. w napisie `"\"Ala\"\n` nie ma tak naprawdę żadnego ukośnika). Zadanie 6. pokazuje, jak dowolny ciąg znaków (w tym tych, które można by zinterpretować jako znaki specjalne lub sterujące) zamienić na znaki, które na pewno nie są ani specjalne, ani sterujące, gdyż reprezentowane są przez cyfry i litery. W praktyce (np. przy przesyłaniu załączników w poczcie e-mail) częściej stosuje się nieco bardziej złożone kodowanie [Base64](https://pl.wikipedia.org/wiki/Base64).
+- Zadanie 3. wprowadza przykład znaku sterującego (czy też sekwencji znaków sterujących). Niektóre urządzenia większość znaków przetwarzają jak litery, natomiast kilka wybranych traktują jak rozkazy. W tym samym strumieniu mamy więc wymieszane dane ("litery") i rozkazy. Innym przykładem znaku specjalnego jest `\` w napisach (np. w napisie `"\"Ala\"\n"` nie ma tak naprawdę żadnego ukośnika). Zadanie 6. pokazuje, jak dowolny ciąg znaków (w tym tych, które można by zinterpretować jako znaki specjalne lub sterujące) zamienić na znaki, które na pewno nie są ani specjalne, ani sterujące, gdyż reprezentowane są przez cyfry i litery. W praktyce (np. przy przesyłaniu załączników w poczcie e-mail) częściej stosuje się nieco bardziej złożone kodowanie [Base64](https://pl.wikipedia.org/wiki/Base64).
 - Z kolei zadania 2, 4 i 5 to łagodne wprowadzenie w dziwny świat komputerowej reprezentacji tekstu.  
 
 #### Uzupełnienie
