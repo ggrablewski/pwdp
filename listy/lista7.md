@@ -49,3 +49,4 @@
    ```
 
    Generalnie pomysł polega na znalezieniu indeksu mniej więcej w połowie poszukiwanego zakresu. Jeżeli pod tym indeksem znajduje się poszukiwana wartość, to kończymy. Jeśli nie, to dalej sprawdzamy tylko lewą lub prawą "połowę" tablicy, na lewo lub prawo do sprawdzonego indeksu, wykorzystując uporządkowanie liczb w tablicy. Rekurencję kończymy, gdy zakres ma długość 1, a zależnie od Waszej implementacji może to być też 2 (to pozwoli uniknąć pustego, czyli ujemnego zakresu w kolejnym kroku).
+
