@@ -72,7 +72,7 @@
 
 - [Definicja i przykłady funkcji rekurencyjnych](./07-rekurencja.md)
 - [Co to jest *stack overflow*?](07-stackoverflow.md)
-- Debugowanie programów z funkcjami rekurencyjnymi
+- [Debugowanie programów z funkcjami rekurencyjnymi](./07-debugowanie-rekurencji.md)
 - [Lista zadań nr 7](./listy/lista7.md)
 
 ### 8. Struktury, klasy i obiekty
