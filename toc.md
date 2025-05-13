@@ -77,19 +77,22 @@
 
 ### 8. Struktury, klasy i obiekty
 
-- Struktura
-- Klasa jako proste rozszerzenie struktury
-  - konstruktor, destruktor
-  - funkcje składowe
-  - sekcje prywatne i publiczne
+- [Struktura](08-struktury.md)
+- [Klasa jako rozszerzenie struktury](08-klasy.md)
+  - [sekcje prywatne i publiczne](08-private-public.md)
+  - [funkcje składowe](08-funkcje-sklado)
+  - konstruktory, destruktor
+  - dziedziczenie (elementy)
+  - klasy a struktury w C++
 - Obiekt
-- Lista zadań nr 8
+- [Lista zadań nr 8](./listy/lista8.md)
 
 ### 9. Szablony i wyjątki
 
 - Dlaczego typ danych przechowywanych w `std::vector` zapisywany jest w nawiasach ostrokątnych?
 - Prosty przykład szablonu
 - Co robić, gdy jakiś fragment programu zgłosi wyjątek? 
+- [Lista zadań nr 9](./listy/lista9.md)
 
 ### 10. Elementy biblioteki standardowej C++ (STL) 
 
