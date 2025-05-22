@@ -127,7 +127,7 @@ Przechodzimy do funkcji `main`.
   while (window.isOpen())
   ```
 
-  tworzy tzw. pętlę komunikatów. Istnienie tej pętli jest charakterystyczną cechą programów sterowanych zdarzeniami. W programach tego rodzaju przepływ programu nie ma formy liniowej, od początku do końca `main`, lecz ma postać w zasadzie nieskończonej pętli, w której program pobiera z otoczenia tzw. komunikaty i je przetwarza. Komunikaty mogą reprezentować takie zdarzenia, jak zmiana rozmiaru okna, ruch myszy, przyciśnięcie klawisza na klawiaturze itp. Pętlę przerywa komunikat, który wprowadza obiekt `window` w stan "*not open*", który może zostać wygenerowany np. przez zamknięcie okna ww standardowy sposób (np. kliknięciem w "krzyżyk" na belce tytułowej okna)
+  tworzy tzw. pętlę komunikatów. Istnienie tej pętli jest charakterystyczną cechą programów sterowanych zdarzeniami. W programach tego rodzaju przepływ programu nie ma formy liniowej, od początku do końca `main`, lecz ma postać w zasadzie nieskończonej pętli, w której program pobiera z otoczenia tzw. komunikaty i je przetwarza. Komunikaty mogą reprezentować takie zdarzenia, jak zmiana rozmiaru okna, ruch myszy, przyciśnięcie klawisza na klawiaturze itp. Pętlę przerywa komunikat, który wprowadza obiekt `window` w stan "*not open*", który może zostać wygenerowany np. przez zamknięcie okna w standardowy sposób (np. kliknięciem w "krzyżyk" na belce tytułowej okna)
 
 - Instrukcja
 
@@ -137,7 +137,7 @@ Przechodzimy do funkcji `main`.
 
   tworzy kolejną pętlę, przy okazji tworząc zmienną `event` o zakresie widoczności ograniczonym do tej pętli i zainicjalizowaną wartością zwróconą przez `window.pollEvent()`. W pętli tej z kolejki komunikatów (typu FIFO, *first in, first out*) pobiera się i przetwarza kolejne komunikaty. Funkcja `window.pollEvent()` zwraca kolejny komunikat, jeśli kolejka komunikatów nie jest pusta, lub specjalną wartość `std::nullopt`, jeśli wszystkie komunikaty zostały przetworzone i ich kolejka jest pusta. Dochodzimy do typu wartości zwracanej przez tę funkcję: `std::optional`. Jest to specjalny typ, który może przechowywać zmienną lub obiekt określonego typu lub też jej... nie przechowywać. Coś w rodzaju zmiennej warunkowej - zmienna tego typu może przechowywać wartość określonego typu lub być w stanie "pusty". Dość często używa jej się do zwracania wartości funkcji, które w określonych warunkach mogą nie być w stanie zwrócić pożądanej wartości. W powyższym przypadku idea użycia `std::optional` polega na tym, że jeżeli `event` jest w stanie "pusty", to wiemy, że nie przechowuje żadnego zdarzenia; w przeciwnym wypadku `event` przechowuje zdarzenie, które zapewne trzeba jakoś obsłużyć (lub po prostu pominąć).
 
-  Kiedy powyższa pętla zakończy działanie? Otóż wtedy, kiedy `event` będzie miał wartość konwertowaną na `false`, a skoro jest to obiekt typu `std::optional`, to zdarzy się to dokładnie wtedy, gdy `event` będzie pusty. Czyli pętla skończy się wtedy, gdy skończą zdarzenia do przetworzenia.       
+  Kiedy powyższa pętla zakończy działanie? Otóż wtedy, kiedy `event` będzie miał wartość konwertowaną na `false`, a skoro jest to obiekt typu `std::optional`, to zdarzy się to dokładnie wtedy, gdy `event` będzie pusty. Czyli pętla skończy się wtedy, gdy skończą się zdarzenia do przetworzenia.       
 
 -  Treść wewnętrznej pętli, pobierającej i przetwarzającej komunikaty, wygląda następująco:
 
@@ -163,7 +163,7 @@ Przechodzimy do funkcji `main`.
 
   - Pierwsza z nich "czyści" (ang. *clears*) przestrzeń roboczą okna pędzlem czarnym (`sf::color::Black`).
   - Następnie sprawdzamy wartość (naszej) zmiennej logicznej `visible_shape`. Jeśli jest to `true`, to wyświetlamy przygotowany wcześniej kształt (tu: czerwone kółko). 
-  - Na koniec musimy wyświetlić przygotowany obraz na ekranie. SFML usiłuje zoptymalizować operacje graficzne. W tym celu operacje w rodzaju `window.draw(shape)` wykonywane są na wewnętrznym buforze pamięci. Instrukcja `window.display()` wysyła zawartość tego bufora do karty graficznej. Wiąże się to z tym, że praktycznie każda operacja na karcie graficznej wiąże się z opóźnieniem rzędu 1 $\mu$s. Jedna operacja to nie problem, ale dziesiątki, setki mogą już powodować odczuwalne opóźnienie w działaniu grafiki. Poza tym chcemy, by grafika, w tym wszelkie animacje, działała płynnie. Nie chcemy widzieć czarnego ekranu na którym po chwili pojawia się czerwone kółko ani innych "migających" fragmentów obrazów, które w ogóle nie powinny być wyświetlane.   
+  - Na koniec musimy wyświetlić przygotowany obraz na ekranie. SFML usiłuje zoptymalizować operacje graficzne. W tym celu operacje w rodzaju `window.draw(shape)` wykonywane są na wewnętrznym buforze pamięci. Instrukcja `window.display()` wysyła zawartość tego bufora do karty graficznej. Wiąże się to z tym, że praktycznie każda operacja na karcie graficznej wiąże się z opóźnieniem rzędu 1 $\mu$s. Jedna operacja to nie problem, ale dziesiątki, setki mogą już powodować odczuwalne opóźnienie w działaniu grafiki. A przecież chcemy, by grafika, w tym wszelkie animacje, działała płynnie. Nie chcemy widzieć czarnego ekranu na którym po chwili pojawia się czerwone kółko ani innych "migających" fragmentów obrazów, które w ogóle nie powinny być wyświetlane.   
 
 Proszę teraz jeszcze raz przejrzeć cały kod źródłowy - czy wszystko jest już zrozumiałe? 
 

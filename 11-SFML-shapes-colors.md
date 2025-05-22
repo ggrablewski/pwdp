@@ -84,9 +84,9 @@ Mamy do dyspozycji trzy obiekty reprezentujące powyższe cztery rodziny kształ
 
 - `sf::CircleShape` - koło lub wielokąt foremny
 
-  - koło jest przybliżane 30-kątem foremnym
+  - koło jest przybliżane 30-kątem foremnym (wartość domyślna, którą można zmienić)
 
-  - aby narysować wielokąt foremny o innej niż 30 liczbie boków, należy podać go jako drugu argument konstruktora, np.
+  - aby narysować wielokąt foremny o innej niż 30 liczbie boków, należy podać go jako drugi argument konstruktora, np.
 
     ```c++
     sf::CircleShape tri(200.0f, 3); // trójkąt
@@ -98,7 +98,7 @@ Mamy do dyspozycji trzy obiekty reprezentujące powyższe cztery rodziny kształ
 
   - SFML rysuje wielokąt wypukły jako sumę wielokątów o wspólnym wierzchołku ulokowanym w środku ciężkości wszystkich wierzchołków.   
 
-Stąd w programie mamy blok instrukcji tworzących obiekty reprezentujące koło, prostokąt, trójkąt równoboczny, wielokąt i linię reprezentowaną przez "cienki prostokąt":
+W programie mamy blok instrukcji tworzących obiekty reprezentujące koło, prostokąt, trójkąt równoboczny, wielokąt i linię reprezentowaną przez "cienki prostokąt":
 
 ```c++
 sf::CircleShape circle(120.0f);
@@ -129,7 +129,7 @@ Idea jest następująca: jeżeli w wyrażeniu `convex.setPoint(5, {70.f, 100.f})
 
 #### 11.4.1.2 Kolory
 
-Każdy kształt posiada "pędzel", którym malowany jest ten kształt, a każdy pędzel ma swój kolor. Za kolory w SFML odpowiada klasa `Color`. Jej konstruktor ma 4 argumenty, którymi są liczby całkowite z przedziału $[0, 255]$, przy czym czwarty argument jest opcjonalny, gdyż posiada wartość domyślną 255. Odpowiadają one nasyceniu składowych RGBA (czerwona, zielona, niebieska, kanał alfa = przezroczystość).     
+Każdy kształt posiada "pędzel", którym malowany jest ten kształt, a każdy pędzel ma swój kolor. Za kolory w SFML odpowiada klasa `Color`. Jej konstruktor ma 4 argumenty, którymi są liczby całkowite z przedziału $[0, 255]$, przy czym czwarty argument jest opcjonalny, a jego wartością domyślną jest 255. Odpowiadają one nasyceniu składowych RGBA (czerwona, zielona, niebieska, kanał alfa = przezroczystość).     
 
 Przykład:
 

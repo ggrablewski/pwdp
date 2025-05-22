@@ -58,7 +58,11 @@ Wynik działania tego programu (klatka z płynnej animacji):
 
 #### 13.4.2.1 Wygładzanie krawędzi (antialiasing)
 
-Ten temat zostanie omówiony w [kolejnym rozdziale](./11-SFML-antialiasing.md).
+Ten temat zostanie omówiony w [kolejnym rozdziale](./11-SFML-antialiasing.md). Tu wspomnę tylko, że antyaliasing defioniowany jest w powyższym programie instrukcją
+
+```c++
+settings.antiAliasingLevel = 8;
+```
 
 #### 13.4.2.2 Elementy statyczne. Środek układu współrzędnych lokalnych (*Origin*) 
 
@@ -67,7 +71,7 @@ Program definiuje dwa obiekty wyświetlane na ekranie: trójkąt i obręcz koła
 - Trójkąt:
 
   ```c++
-  sf::CircleShape tri(window_width / 4, 3);
+  sf::CircleShape tri(window_width / 4.0f, 3);
   tri.setFillColor({128, 128, 255});
   tri.setOrigin({window_width / 4.0f, window_width / 4.0f});
   tri.setPosition({window_width / 2.0f, window_height / 2.0f});
@@ -86,7 +90,7 @@ Program definiuje dwa obiekty wyświetlane na ekranie: trójkąt i obręcz koła
   circ.setOutlineThickness(1.5f);
   ```
 
-  Ponieważ obręcz jest duża, przybliżamy ją za pomocą 100-kąta foremnego (konstruktor obiektu `circ`). Jego środek umieszczamy dokładnie w środku trójkąta. Kolor wypełnienia deklarujemy jako "kolor" przezroczysty, `sf::Color::Transparent`. Na marginesie, "kolor" przezroczysty definiowany jest przez SFML jako obiekt klasy `sf::Color` z wartością kanału alfa równej `0`. Następnie ustalamy kolor i grubość obwódki. 
+  Ponieważ obręcz jest duża, więc żeby nie było widać, że konstruowana jest z odcinków, przybliżamy ją za pomocą 100-kąta foremnego (konstruktor obiektu `circ`). Jego środek umieszczamy dokładnie w środku trójkąta. Kolor wypełnienia deklarujemy jako "kolor" przezroczysty, `sf::Color::Transparent`. Na marginesie, "kolor" przezroczysty definiowany jest przez SFML jako obiekt klasy `sf::Color` z wartością kanału alfa równej `0`. Następnie ustalamy kolor i grubość obwódki. 
 
 #### 13.4.2.3 Liczba klatek na sekundę
 
@@ -100,7 +104,7 @@ const int fps = 60; // 60 scen na sekundę
 window.setFramerateLimit(fps);
 ```
 
-Funkcja ta działa w ten sposób, że za każdym razem, gdy na rzecz okna wywołujemy funkcję `display`, SFML sprawdza, ile czasu opłynęło od wyświetlenia poprzedniej sceny i jeżeli czas ten jest krótszy od `1/fps`, to usypia nasz program akurat na taki czas, aby uzyskać docelową prędkość animacji. Bardzo proste i bardzo skuteczne rozwiązanie. 
+Funkcja ta działa w ten sposób, że za każdym razem, gdy na rzecz okna wywołujemy funkcję `display`, SFML sprawdza, ile czasu opłynęło od wyświetlenia poprzedniej sceny i jeżeli czas ten jest krótszy od `1.0/fps`, to usypia nasz program akurat na taki czas, aby uzyskać docelową prędkość animacji. Bardzo proste i bardzo skuteczne rozwiązanie. 
 
 #### 13.4.2.4  Dostosowanie pętli komunikatów do animacji
 
