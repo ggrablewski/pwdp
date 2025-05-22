@@ -90,7 +90,7 @@
 ### 9. Szablony i wyjątki
 
 - Dlaczego typ danych przechowywanych w `std::vector` zapisywany jest w nawiasach ostrokątnych?
-- Prosty przykład szablonu
+- [Prosty przykład szablonu](./09-prosty-szablon.md)
 - Co robić, gdy jakiś fragment programu zgłosi wyjątek? 
 - [Lista zadań nr 9](./listy/lista9.md)
 
